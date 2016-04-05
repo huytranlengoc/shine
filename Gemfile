@@ -13,9 +13,10 @@ gem 'bower-rails'
 gem 'faker'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails'
   gem 'poltergeist'
   gem 'database_cleaner'
+  gem 'teaspoon-jasmine'
   gem 'byebug'
 end
 
