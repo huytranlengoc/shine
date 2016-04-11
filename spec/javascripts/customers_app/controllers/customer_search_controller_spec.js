@@ -18,8 +18,6 @@ describe("CustomerSearchController", function() {
   });
 
   describe("Fetching Search Results", function() {
-    beforeEach(module("customers"));
-
     var scope = null,
         controller = null,
         httpBackend = null,
@@ -39,6 +37,8 @@ describe("CustomerSearchController", function() {
             username: "bobbyj"
           }
         ];
+
+    beforeEach(module("customers"));
 
     beforeEach(inject(function($controller, $rootScope, $httpBackend) {
       scope = $rootScope.$new();
